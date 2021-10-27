@@ -1,4 +1,4 @@
 class Project < ApplicationRecord
-    #Validates user id associated with the project
+    # Requires title and description
     validates_presence_of :title, :description
 end
