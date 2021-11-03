@@ -107,6 +107,24 @@
           null
         ]
       },
+      "/root/CS3300/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/CS3300/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/root/CS3300/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -126,26 +144,8 @@
         ],
         "branches": {
         }
-      },
-      "/root/CS3300/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/CS3300/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1635488782
+    "timestamp": 1635966859
   }
 }
