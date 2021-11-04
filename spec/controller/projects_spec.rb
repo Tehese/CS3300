@@ -1,6 +1,6 @@
 require "rails_helper"
 
-#Verifying HTTP Method in order to get a correct address
+#Verifying the get HTTP Method in order to get a correct address
 RSpec.describe ProjectsController, type: :controller do
   context "GET #index" do
     it "returns a success response" do
