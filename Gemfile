@@ -7,6 +7,7 @@ ruby '2.7.0'
 gem 'rails', '~> 5.2.6'
 gem 'mini_racer'
 
+gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
