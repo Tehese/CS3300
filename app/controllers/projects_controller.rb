@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
   end
 
   # GET /projects/new
-  before_action :authenticate_user!
+  
   def new
     @project = Project.new
   end
@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
   end
 
   # POST /projects or /projects.json
-  before_action :authenticate_user!
+  
   def create
     @project = Project.new(project_params)
 
@@ -37,7 +37,7 @@ class ProjectsController < ApplicationController
   end
 
   # PATCH/PUT /projects/1 or /projects/1.json
-  before_action :authenticate_user!
+  
   def update
     respond_to do |format|
       if @project.update(project_params)
@@ -51,7 +51,7 @@ class ProjectsController < ApplicationController
   end
 
   # DELETE /projects/1 or /projects/1.json
-  before_action :authenticate_user!
+  
   def destroy
     @project.destroy
     respond_to do |format|
