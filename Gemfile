@@ -7,6 +7,7 @@ ruby '2.7.0'
 gem 'rails', '~> 5.2.6'
 gem 'mini_racer'
 
+gem "factory"
 gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -63,6 +64,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'factory_bot_rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
