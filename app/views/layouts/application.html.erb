@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-  
+    <title>CS3300</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
     <p class="navbar-text float-right">
     <% if user_signed_in? %>
       Logged in as <strong><%= current_user.email %></strong>.
@@ -13,16 +20,6 @@
       <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
     <% end %>
     </p>
-
-    <title>CS3300</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
     <%= yield %>
   </body>
 </html>
