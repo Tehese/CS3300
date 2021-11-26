@@ -46,6 +46,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'sqlite3' 
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
 end
 
 group :development do

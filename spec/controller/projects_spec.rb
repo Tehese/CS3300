@@ -2,6 +2,9 @@ require "rails_helper"
 
 #Verifying the get HTTP Method in order to get a correct address
 RSpec.describe ProjectsController, type: :controller do
+
+  login_user #Uses Devise and Factorybot to log into a generic user
+
   context "GET #index" do
     it "returns a success response" do
       get :index

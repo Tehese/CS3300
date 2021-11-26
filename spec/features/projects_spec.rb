@@ -2,6 +2,7 @@ require 'rails_helper'
 
 #This specific method is creating a new project with the a title before each scenario listed below.
 RSpec.feature "Projects", type: :feature do   #This line specifically looking for a file in spec/feature/projects_spec.sb
+  
   context "Create new project" do
     before(:each) do
       visit new_project_path
