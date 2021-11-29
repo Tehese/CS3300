@@ -13,102 +13,98 @@
           null
         ]
       },
-      "/root/CS3300/app/controllers/projects_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          2,
-          2,
-          2,
-          1,
-          null,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          1,
-          null,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          2,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          8,
-          null,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null
-        ]
-      },
-      "/root/CS3300/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/root/CS3300/app/models/project.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null
-        ]
-      },
       "/root/CS3300/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/CS3300/app/controllers/projects_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/CS3300/app/controllers/application_controller.rb": {
+        "lines": [
           0,
           0
         ],
@@ -144,6 +140,16 @@
         "branches": {
         }
       },
+      "/root/CS3300/app/models/project.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/root/CS3300/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -165,6 +171,6 @@
         }
       }
     },
-    "timestamp": 1637952227
+    "timestamp": 1638152225
   }
 }
