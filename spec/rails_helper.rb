@@ -54,6 +54,7 @@ RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::IntegrationHelpers, type: :request
   config.include Devise::Test::IntegrationHelpers, type: :feature
+  config.include Devise::Test::IntegrationHelpers, type: :model
   config.extend ControllerMacros, :type => :controller
   config.include FactoryBot::Syntax::Methods
   # arbitrary gems may also be filtered via:
