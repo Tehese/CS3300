@@ -3,7 +3,6 @@ require_relative "../support/controller_macros"
 
 
 RSpec.describe User, type: :model do
-  
   describe 'user registration' do 
     it "name, email, password and password_You can register if confirmation exists" do
       user = build(:user)
