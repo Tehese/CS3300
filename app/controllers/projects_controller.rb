@@ -61,11 +61,12 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def set_project
+    @project = Project.find(params[:id])
+  end
+
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_project
-      @project = Project.find(params[:id])
-    end
+    # Use callbacks to share common setup or constraints between actions
 
     # Only allow a list of trusted parameters through.
     def project_params
