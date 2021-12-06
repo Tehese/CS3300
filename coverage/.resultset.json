@@ -79,9 +79,10 @@
           null,
           null,
           1,
+          8,
+          null,
           null,
           1,
-          8,
           null,
           null,
           null,
@@ -104,16 +105,6 @@
           1,
           null
         ]
-      },
-      "/root/CS3300/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       },
       "/root/CS3300/app/jobs/application_job.rb": {
         "lines": [
@@ -165,6 +156,6 @@
         }
       }
     },
-    "timestamp": 1638826647
+    "timestamp": 1638831700
   }
 }
