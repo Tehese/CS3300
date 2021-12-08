@@ -10,6 +10,7 @@ gem 'mini_racer'
 gem 'bootstrap', '~> 4.6.1'
 gem 'jquery-rails'
 
+
 gem "factory"
 gem 'devise'
 # Use Puma as the app server
