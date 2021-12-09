@@ -1,18 +1,19 @@
+<div class="col d-flex justify-content-center">
 
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      <%= @project.title %>
+    </div>
 
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><%= @project.description %></li>
+      <%= link_to 'Back', projects_path %>
+      <% if user_signed_in? %>
+      <%= link_to 'Edit' , edit_project_path(@project) %> 
+      <% end %>
+    </ul>
+   
 
+  </div>
 
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+</div>

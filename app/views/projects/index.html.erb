@@ -4,23 +4,27 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   </head>
+
+  <table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Links</th>
+    </tr>
+  </thead>
+
   <body>
-    <h1>Projects</h1>
-    <div class="container" style="background-color: silver;">
+    
+    <div class="container-fluid" style="background-color: silver;">
       <% @projects.each do |project| %>
         <tr>
           <td><%= project.title %></td>
           <td><%= project.description %></td>
             <td><%= link_to 'Show   ', project %></td>
-            <% if user_signed_in? %>
-            <td><%= link_to 'Edit   ', edit_project_path(project) %></td>
-            <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% end %>
         </tr>
       <% end %>
     </div>
@@ -34,9 +38,3 @@
 
 <p id="notice"><%= notice %></p>
 
-
-<br>
-
-<% if user_signed_in? %>
-  <%= link_to 'New Project', new_project_path %>
-<% end %>
