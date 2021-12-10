@@ -18,12 +18,14 @@ RSpec.feature "Projects", type: :feature do   #This line specifically looking fo
     scenario "should be successful" do
       fill_in "Description", with: "Test description"
       click_button "Create Project"
+      visit root_path
       expect(page).to have_content("Project was successfully created")
     end
 
     #Similiar to the last one however it is not adding a description in and making sure that the output of the webpage requires a description
     scenario "should fail" do
       click_button "Create Project"
+      
       expect(page).to have_content("Description can't be blank")
     end
   end
@@ -43,6 +45,7 @@ RSpec.feature "Projects", type: :feature do   #This line specifically looking fo
         fill_in "Description", with: "New description content"
       end
       click_button "Update Project"
+      visit root_path
       expect(page).to have_content("Project was successfully updated")
     end
 
@@ -62,8 +65,8 @@ RSpec.feature "Projects", type: :feature do   #This line specifically looking fo
     scenario "remove project" do
       user = FactoryBot.create(:user)
       login_as(user)
-      visit project_path, params: { project: id }
-      click_link "Destroy"
+      visit "/projects/#{project.id}" 
+      click_link "Delete"
       expect(page).to have_content("Project was successfully destroyed")
       expect(Project.count).to eq(0)
     end
