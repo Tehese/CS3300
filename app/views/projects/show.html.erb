@@ -1,19 +1,13 @@
 <div class="col d-flex justify-content-center">
-
-  <div class="card" style="width: 18rem;">
-    <div class="card-header">
-      <%= @project.title %>
-    </div>
-
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item"><%= @project.description %></li>
-      <%= link_to 'Back', projects_path %>
+  <div class="card bg-warning">
+    <div class="card-body">
+      <h4 class="card-title"><%= @project.title %></h4>
+      <p class="card-text"><%= @project.description %></p>
+      <a href="/" class="card-link">Back</a>
       <% if user_signed_in? %>
-      <%= link_to 'Edit' , edit_project_path(@project) %> 
+        <%= link_to 'Edit' , edit_project_path(@project) %> 
       <% end %>
-    </ul>
-   
-
-  </div>
+    </div>
+</div>
 
 </div>
