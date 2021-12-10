@@ -1,3 +1,5 @@
+
+
 <div class="col d-flex justify-content-center">
   <div class="card bg-warning">
     <div class="card-body">
@@ -6,8 +8,8 @@
       <a href="/" class="card-link">Back</a>
       <% if user_signed_in? %>
         <%= link_to 'Edit' , edit_project_path(@project) %> 
+        <%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' } %>
       <% end %>
     </div>
-</div>
-
+  </div>
 </div>
